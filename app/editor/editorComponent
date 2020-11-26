@@ -1,0 +1,39 @@
+<div class="container">
+    <form [formGroup]="infoForm">
+        <fieldset >
+            <fieldset class="form-group">
+                <input type="text" placeholder="姓名" formControlName="name" required>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <input type="number" min="0" placeholder="年龄" formControlName="age" required>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <input type="text" placeholder="曾经/目前就读学校" formControlName="school" required>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <input type="text" placeholder="现地址" formControlName="address" required>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <input type="text" placeholder="自我介绍" formControlName="selfIntro" required>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <input type="text" placeholder="心目中的异性" formControlName="preference" required>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <input type="性别" placeholder="男/女" formControlName="sexualType" required>
+            </fieldset>
+
+            <button class="btn btn-primary" type="button" 
+            [disabled]="!infoForm.valid"
+            (click)="submitForm()">
+                Publish
+            </button>
+        </fieldset>
+    </form>
+</div>
