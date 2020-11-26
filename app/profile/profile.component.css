@@ -1,0 +1,20 @@
+.container{
+    margin-top: 80px;
+}
+
+.btn{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.media{
+    margin-top: 30px;
+}
+
+.comment-author-img{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
