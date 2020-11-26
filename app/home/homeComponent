@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row"> 
+        <div class="col-3">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-action" [ngClass]="{'active': listConfig.type === 'all'}"
+                    (click)="setListTo('all')">
+                    查看全部</li>
+
+                <li class="list-group-item 
+                list-group-item-action" (click)="setListTo('male')"
+                    [ngClass]="{'active': listConfig.type === 'male' }">小哥哥</li>
+
+                <li class="list-group-item 
+                list-group-item-action" (click)="setListTo('female')"
+                    [ngClass]="{'active': listConfig.type === 'female' }">小姐姐</li>
+            </ul>
+        </div>
+        <div class="col-9">
+            <app-info-list [limit]="6" [config]="listConfig"></app-info-list>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 
+<router-outlet></router-outlet> --> -->
