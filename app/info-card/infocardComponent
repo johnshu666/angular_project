@@ -1,0 +1,17 @@
+<div class="card" style="width: 18rem">
+    <img class="card-img-top" src="{{profile.img }}" />
+    <div class="card-body">
+        <p class="card-text"> {{profile.detail}}
+        </p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <button type="button" [routerLink]="['/profile', profile.id]"
+                    class="btn btn-sm btn-outline-secondary">view</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+                <!-- <app-favorite-button [profile]="profile" (toggle)="onTaggleFavorite($event)">
+                    {{profile.favoriteCount}}
+                </app-favorite-button> -->
+            </div>
+        </div>
+    </div>
+</div>
