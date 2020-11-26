@@ -1,0 +1,45 @@
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" routerLink="/instruction" routerLinkActive="active" >Pick<span class="sr-only">(current)</span></a>
+
+    <div *appShowAuthed="false">
+      <ul class="navbar-nav mr-auto ">
+        <li class="nav-item active">
+          <a class="nav-link"routerLink="/home" >首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login" >登录</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/register" >注册</a>
+        </li> 
+      </ul>
+    </div>
+
+    <div *appShowAuthed="true">
+      <ul class="navbar-nav mr-auto ">
+        <li class="nav-item active">
+          <a class="nav-link" 
+          [routerLinkActiveOptions]="{ exact: true }"
+           routerLink="/home">主页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)=logout()>登出</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >{{currentUer.name}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/editor" >发布交友</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="home-page">
+    <div class="banner">
+        <div class="container">
+            <h1 class="logo-font">Pick</h1>
+            <p>A place to find mutual relationship</p>
+        </div>
+    </div>
+</div>
