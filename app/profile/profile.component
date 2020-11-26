@@ -1,0 +1,46 @@
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <img style="width: 300px; height: 300px; " [src]="profile.img" alt="something wrong"
+                class="rounded float-left">
+            <button type="button" class="btn btn-primary btn-lg">申请联系</button>
+            <app-favorite-button [profile]="profile" (toggle)="onTaggleFavorite($event)"> {{ profile.favoriteCount }}
+            </app-favorite-button>
+        </div>
+        <div class="col-6 offset-md-2 ">
+            <div class="card">
+                <div class="card-header">
+                    个人介绍
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                        sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    理想中的你
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+
+    <!-- <app-list-errors [errors]="commentFormError"></app-list-errors> -->
+    <!-- <div class="row" style="margin-top: 50px;">
+        <form class="col-md-6 offset-md-5" (ngSubmit)="addComment()">
+            <fieldset [disabled]="isSubmitting">
+                <textarea [formControl]="commentControl" cols="50" rows="3" ></textarea>
+                <div class="card-footer bg-transparent">
+                    <button type="submit" class="btn btn-primary">Post Comment</button>
+                    <img [src]="profile.img" class="comment-author-img">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div> -->
